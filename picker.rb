@@ -1,11 +1,10 @@
 
-<<<<<<< HEAD
 def test1(name)
    puts name
-=======
+end
+
 def test2(name)
   puts name
->>>>>>> test2
 end
 
 def pick_engineer
@@ -15,11 +14,8 @@ def pick_engineer
    """
    engineers = File.open('engineers.txt').read.split("\n")
    engineer_name = engineers[Random.rand(0...engineers.size())]
-<<<<<<< HEAD
    test1(engineer_name)
-=======
    test2(engineer_name)
->>>>>>> test2
 end
 
 #print engineer name
