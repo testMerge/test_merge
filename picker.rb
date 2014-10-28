@@ -1,4 +1,8 @@
 
+def test1(name)
+   puts name
+end
+
 def pick_engineer
    """
    Function: pick_engineer
@@ -6,9 +10,10 @@ def pick_engineer
    """
    engineers = File.open('engineers.txt').read.split("\n")
    engineer_name = engineers[Random.rand(0...engineers.size())]
+   test1(engineer_name)
 end
 
 #print engineer name
 if __FILE__ == $0
-   puts pick_engineer
+   pick_engineer
 end
